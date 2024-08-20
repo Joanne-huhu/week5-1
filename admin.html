@@ -75,22 +75,35 @@
     <header>
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid d-flex justify-content-between">
-         <div class="d-flex ">
+         <div class="d-flex">
           <h1 class="navbar-brand fw-bold ">Admin</h1>
-                  <!-- Button trigger modal -->
-<button type="button" class="btn text-dark link-success fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  <span class="material-symbols-outlined align-bottom  ">
-    add
-    </span>
-    Add New Admin
-</button>
-
+                <button type="button" class="btn text-dark link-success fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-symbols-outlined align-bottom  ">
+                    add
+                    </span>
+                    Add New Admin
+                </button>
+              
+        </div>
+         <div class="d-flex">
+           <a class="me-2" href="#"><span class="material-symbols-outlined">
+       search
+       </span></a>
+     <a href="#"><span class="material-symbols-outlined">
+       notifications_active
+       </span>
+       </span></a>
+         </div>   
+  
+          </div>
+        
+      </nav>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content p-4">
       <div class="modal-header border-bottom-0">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Admin</h5>
+        <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body ">
@@ -110,17 +123,16 @@
       <div class="border-bottom py-4 ">
         <h6 class="fw-bold">Verification</h6>
         <div class="d-flex align-items-center my-2">
-        <span class="material-symbols-outlined align-bottom me-2">
-          check_circle
-          </span>Verified
-          <small class="ms-auto">2020/4/12</small>
+        <span class="material-symbols-outlined align-bottom me-2 text-danger">
+          warning
+          </span>Unverified
         </div>
-        <button type="button" class="btn btn-outline-secondary text-center rounded-0 w-100"  disabled>Send Verification Mail</button>
+        <button type="button" class="btn btn-outline-secondary text-center rounded-0 w-100 text-success fw-bold"  disabled>Send Verification Mail</button>
          </div>
       <div class="border-bottom py-4 ">
         <h6 class="fw-bold">Access Level</h6>
-        <select class="form-select mt-2" aria-label="Default select example">
-          <option selected>Admin</option>
+        <select class="form-select mt-2" aria-label="Default select example" placeholder="-Choose access level-">
+          <option selected>-Choose access level-</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
@@ -159,42 +171,21 @@
           </label>
         </div>
         </div>
-        <div class="border-bottom py-4 ">
-          <h6 class="fw-bold">Deactivate Account</h6>
-          <div class="d-flex align-items-center mt-2 my-2 text-danger">
-          <span class="material-symbols-outlined align-bottom me-2">
-            warning
-            </span>This cannot be undone!
-          </div>
-          <button type="button" class="btn btn-outline-secondary text-center rounded-0 w-100"  disabled>Send Verification Mail</button>
-            
-            
-          </div>
-          </div>
-        
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Add</button>
       </div>
+
     </div>
   </div>
 </div>
-        </div>
-         <div>
-           <a class="me-2" href="#"><span class="material-symbols-outlined">
-       search
-       </span></a>
-     <a href="#"><span class="material-symbols-outlined">
-       notifications_active
-       </span>
-       </span></a>
-         </div>   
-  
-          </div>
-        
-      </nav>
+
     </header>
+    
+    
+    
+ 
     <table class="table table-hover">
       <thead >
         <tr >
@@ -392,6 +383,7 @@
     </div>
   </div>
 </div>
+
   </main>
   
     </div>
